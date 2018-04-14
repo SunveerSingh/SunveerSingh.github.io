@@ -1,2 +1,2 @@
 # SunveerSingh.github.io
-[Click Here](https://sunveersingh.github.io/) To visit My Website!
+[Click Here](https://sunveersingh.me/) To visit My Website!
