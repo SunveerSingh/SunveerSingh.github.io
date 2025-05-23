@@ -1,10 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sunveer Gill – Punjabi Rapper | Official Website</title>
+  <meta name="description" content="Official site of Punjabi rapper Sunveer Gill. Explore music, videos, and updates from Vancouver-based hip-hop artist and creative entrepreneur." />
+  <meta name="keywords" content="Sunveer Gill, Punjabi rapper, hip hop artist, music producer, Vancouver, Tu Hi Tu, Gill Flow, Afterwords, Punjabi music, Indian rapper" />
+  <meta name="author" content="Sunveer Gill" />
+  <meta name="robots" content="index, follow" />
 
-<html>
-    <head>
-        <title>Sunveer Singh</title>
-        <link rel="icon" href="favicon.ico" type="image/x-icon" />        
-    </head>
-    <body>
-        In Process!
-    </body>
+  <meta property="og:title" content="Sunveer Gill – Punjabi Rapper | Official Website" />
+  <meta property="og:description" content="Listen to latest Punjabi hip-hop music by Sunveer Gill. Follow his journey as a rapper, entrepreneur, and developer." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://thegill.co/" />
+  <meta property="og:image" content="https://thegill.co/assets/images/gillflow.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sunveer Gill – Punjabi Rapper | Official Website" />
+  <meta name="twitter:description" content="Explore music, videos, and updates from Vancouver-based Punjabi rapper Sunveer Gill." />
+  <meta name="twitter:image" content="https://thegill.co/assets/images/gillflow.jpg" />
+
+  <link rel="canonical" href="https://thegill.co/" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@400;700&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #111;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    .header-bar {
+      position: absolute;
+      top: 20px;
+      left: 30px;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: calc(100% - 60px);
+    }
+
+    .header-logo {
+      font-size: 1.5rem;
+      font-family: 'UnifrakturCook', cursive;
+      background: linear-gradient(to right, #e5b2ca, #b9e1f5);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-transform: lowercase;
+      margin: 0;
+    }
+
+    #menu-toggle {
+      display: block;
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    #main-nav {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 30px;
+      background: #111;
+      padding: 10px;
+      border-radius: 8px;
+      z-index: 20;
+    }
+
+    #main-nav a {
+      margin: 10px 0;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+    }
+
+    header {
+      background: url('assets/images/bg.jpeg') no-repeat center center/cover;
+      height: 100vh;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: left;
+      padding: 0 20px;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+
+    header h1,
+    header p {
+      z-index: 2;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 7rem;
+      font-family: 'UnifrakturCook', cursive;
+      text-transform: lowercase;
+      background: linear-gradient(to right, #e5b2ca, #b9e1f5);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .ticker {
+      background: #7CFC00;
+      color: #000;
+      padding: 10px 0;
+      font-weight: bold;
+      font-size: 1.2rem;
+      white-space: nowrap;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+
+    .ticker-text {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll 15s linear infinite;
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1400px;
+      margin: auto;
+    }
+
+    .bio, .music, .contact {
+      margin-bottom: 40px;
+    }
+
+    .music iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #000;
+    }
+    footer h1 {
+      font-size: 7rem;
+      font-family: 'UnifrakturCook', cursive;
+      text-transform: lowercase;
+      background: linear-gradient(to right, #e5b2ca, #b9e1f5);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 4rem;
+      }
+
+      .music iframe {
+        height: 200px;
+      }
+
+      nav {
+        left: 15px;
+      }
+
+      #main-nav {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 30px;
+        background: #111;
+        padding: 10px;
+        border-radius: 8px;
+        z-index: 20;
+      }
+
+      #main-nav a {
+        margin: 10px 0;
+      }
+
+      #menu-toggle {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header-bar">
+    <h1 class="header-logo">sunveer gill</h1>
+    <button id="menu-toggle">☰</button>
+    <nav id="main-nav">
+      <a href="#bio">Bio</a>
+      <a href="#music">Music</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+
+  <header>
+    <h1>sunveer gill</h1>
+    <p style="margin-top: -10px; font-size: 0.8rem; color: #999; font-style: italic;">
+  every line’s a scar. every verse — a mirror.
+</p>
+
+  </header>
+
+  <div class="ticker">
+    <div class="ticker-text">NEW SONG AVAILABLE EVERYWHERE • NEW SONG AVAILABLE EVERYWHERE • NEW SONG AVAILABLE EVERYWHERE • NEW SONG AVAILABLE EVERYWHERE • NEW SONG AVAILABLE EVERYWHERE • NEW SONG AVAILABLE EVERYWHERE •</div>
+  </div>
+
+  <section id="bio" class="bio">
+    <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center; justify-content: center;">
+      <div style="flex: 1 1 400px;">
+        <h2 style="font-size: 3rem; font-weight: 900; text-transform: uppercase; border-bottom: 4px solid #7CFC00; display: inline-block; margin-bottom: 20px;">About</h2>
+        <p style="margin-bottom: 20px;">Sunveer Gill is a Punjabi rapper based in Vancouver, Canada. With a knack for storytelling through music, Sunveer crafts songs that resonate with every known feeling. Beyond music, Sunveer is also an entrepreneur, developer, and creative force, always pushing boundaries across industries.</p>
+        <div style="display: flex; gap: 15px; margin-bottom: 30px;">
+          <a href="https://www.instagram.com/sunveerxgill/" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" style="width: 32px; height: 32px; filter: grayscale(100%) brightness(200%);">
+          </a>
+          <a href="https://open.spotify.com/artist/43sIHGwXC2T5AgNP1ig4mZ?si=9Dvlh7zITA2QIw0QlMGPPA" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174872.png" alt="Spotify" style="width: 32px; height: 32px; filter: grayscale(100%) brightness(200%);">
+          </a>
+          <a href="https://music.apple.com/us/artist/sunveer-gill/1770912717" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384061.png" alt="Apple Music" style="width: 32px; height: 32px; filter: grayscale(100%) brightness(200%);">
+          </a>
+          <a href="https://www.youtube.com/@sunveerxgill" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" style="width: 32px; height: 32px; filter: grayscale(100%) brightness(200%);">
+          </a>
+        </div>
+      </div>
+      <div style="flex: 1 1 400px; aspect-ratio: 4 / 3; border-radius: 10px; overflow: hidden;">
+  <img src="assets/images/about.jpeg" alt="About Image" style="width: 100%; height: 100%; object-fit: cover;">
+</div>
+    </div>
+  </section>
+
+<section id="music" class="music" style="padding: 60px 20px; background: #111;">
+  <div style="max-width: 1400px; margin: auto; display: flex; flex-wrap: wrap; gap: 60px; justify-content: space-between; align-items: flex-start;">
+
+    <div style="flex: 1 1 300px; min-width: 280px;">
+      <p style="text-transform: uppercase; color: #888; font-weight: bold; font-size: 0.9rem;">/Discography</p>
+      <h2 style="font-size: 2.5rem; font-weight: 900; text-transform: uppercase; color: #fff; margin: 10px 0 20px 0; position: relative;">
+        RELEASES
+        <span style="display:block; height: 4px; background: #7CFC00; width: 100px; margin-top: 10px; border-radius: 2px;"></span>
+      </h2>
+      <p style="color: #ccc; margin: 40px 0 20px 0;">From raw emotion to high-energy tracks, these tracks bring you into the world of Punjabi hip-hop, emotions, and hustle.</p>
+      <a href="https://open.spotify.com/artist/43sIHGwXC2T5AgNP1ig4mZ?si=lYULTbSlTkKRHu5L8x_K5w" target="_blank" style="color: #7CFC00; text-decoration: none; font-weight: bold;">View all releases →</a>
+    </div>
+
+    <a href="https://open.spotify.com/track/6Gv4vRdmLq8F6MrhmRyzQd?si=94b2c105b9c24287" target="_blank" style="text-decoration: none; color: inherit;">
+  <div style="flex: 1 1 240px; max-width: 280px; min-width: 200px; text-align: center; cursor: pointer;">
+    <div style="width: 100%; aspect-ratio: 1 / 1; border-radius: 10px; overflow: hidden;">
+      <img src="assets/images/gillflow.jpg" alt="Gill Flow Cover" style="width: 100%; height: 100%; object-fit: cover;">
+    </div>
+    <h3 style="margin-top: 15px; font-size: 1.1rem; font-weight: bold;">Gill Flow</h3>
+    <div style="margin-top: 10px; display: flex; justify-content: center; gap: 10px;">
+
+    </div>
+  </div>
+</a>
+
+<a href="https://open.spotify.com/track/1Ye312HYsSngrCWgGnPHZs?si=c4f7595832464907" target="_blank" style="text-decoration: none; color: inherit;">
+  <div style="flex: 1 1 240px; max-width: 280px; min-width: 200px; text-align: center; cursor: pointer;">
+    <div style="width: 100%; aspect-ratio: 1 / 1; border-radius: 10px; overflow: hidden;">
+      <img src="assets/images/tuhitu.png" alt="Tu Hi Tu Cover" style="width: 100%; height: 100%; object-fit: cover;">
+    </div>
+    <h3 style="margin-top: 15px; font-size: 1.1rem; font-weight: bold;">Tu Hi Tu</h3>
+    <div style="margin-top: 10px; display: flex; justify-content: center; gap: 10px;">
+
+    </div>
+  </div>
+</a>
+
+<a href="https://open.spotify.com/track/5vBO0iL7J4J9csUoHkOtqV?si=5551b8925d10480f" target="_blank" style="text-decoration: none; color: inherit;">
+  <div style="flex: 1 1 240px; max-width: 280px; min-width: 200px; text-align: center; cursor: pointer;">
+    <div style="width: 100%; aspect-ratio: 1 / 1; border-radius: 10px; overflow: hidden;">
+      <img src="assets/images/afterwords.jpg" alt="Afterwords Cover" style="width: 100%; height: 100%; object-fit: cover;">
+    </div>
+    <h3 style="margin-top: 15px; font-size: 1.1rem; font-weight: bold;">Afterwords</h3>
+    <div style="margin-top: 10px; display: flex; justify-content: center; gap: 10px;">
+
+    </div>
+  </div>
+</a>
+  </div>
+</section>
+
+
+
+
+
+
+ <section id="video" class="video" style="padding: 80px 20px; background: #111;">
+  <div style="max-width: 1400px; margin: auto; text-align: center;">
+
+    <h2 style="font-size: 3rem; font-weight: 900; text-transform: uppercase; border-bottom: 4px solid #7CFC00; display: inline-block; margin-bottom: 20px;">Videos</h2>
+
+    <div style="display: flex; gap: 30px; flex-wrap: wrap; justify-content: center; margin-top: 40px;">
+      
+      <div style="flex: 1 1 500px; max-width: 600px;">
+        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px;">
+          <iframe src="https://www.youtube.com/embed/S918_YREL7k?si=CQz2Tq--rwzdniSE"
+            title="Gill Flow" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"></iframe>
+        </div>
+        <p style="margin-top: 10px; font-weight: bold; color: #ccc; text-align: left;">Gill Flow</p>
+      </div>
+
+      <div style="flex: 1 1 500px; max-width: 600px;">
+        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px;">
+          <iframe src="https://www.youtube.com/embed/s9vo0zO6fGQ?si=MNyQ9Q4EFXbgwWK1"
+            title="Tu Hi Tu" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"></iframe>
+        </div>
+        <p style="margin-top: 10px; font-weight: bold; color: #ccc; text-align: left;">Tu Hi Tu</p>
+      </div>
+
+    </div>
+
+    <div style="margin-top: 60px;">
+      <a href="https://www.youtube.com/@sunveerxgill" target="_blank" style="background: #7CFC00; color: #000; font-weight: bold; padding: 15px 30px; text-decoration: none; border-radius: 4px; display: inline-block;">
+        View all videos →
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="blog" style="padding: 80px 20px; background: #111;">
+  <div style="max-width: 1200px; margin: auto;">
+    <p style="text-transform: uppercase; color: #888; font-weight: bold; font-size: 0.9rem;">/Journal</p>
+    <h2 style="font-size: 2.5rem; font-weight: 900; text-transform: uppercase; color: #fff; margin: 10px 0 40px 0; position: relative;">
+      From the Blog
+      <span style="display:block; height: 4px; background: #7CFC00; width: 120px; margin-top: 10px; border-radius: 2px;"></span>
+    </h2>
+
+    <a href="blogs/tuhitu.html" style="text-decoration: none; color: inherit;">
+      <div style="display: flex; flex-wrap: wrap; background: #1a1a1a; border-radius: 12px; overflow: hidden; transition: 0.3s; cursor: pointer;">
+        
+        <!-- Image -->
+        <div style="flex: 1 1 300px; min-width: 280px; max-height: 250px; overflow: hidden;">
+          <img src="assets/images/tuhitu.png" alt="Tu Hi Tu Blog" style="width: 100%; height: 100%; object-fit: cover;" />
+        </div>
+        
+        <!-- Content -->
+        <div style="flex: 2 1 500px; padding: 30px;">
+          <h3 style="font-size: 1.8rem; font-weight: bold; color: #7CFC00; margin-bottom: 10px;">Behind the Song – Tu Hi Tu</h3>
+          <p style="color: #ccc; line-height: 1.6;">
+            A raw dive into the emotions, lyrics, and inspiration behind "Tu Hi Tu." From sleepless nights to real love, read the story that shaped the song.
+          </p>
+          <p style="margin-top: 15px; color: #888; font-size: 0.9rem;">→ Read full post</p>
+        </div>
+      </div>
+    </a>
+  </div>
+</section>
+
+
+
+
+
+<section id="contact" class="contact" style="padding: 80px 20px; background: #111;">
+  <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 60px;">
+
+    <div style="flex: 1 1 500px; min-width: 280px;">
+      <p style="text-transform: uppercase; color: #888; font-weight: bold; font-size: 0.9rem;">/Connect</p>
+      <h2 style="font-size: 2.5rem; font-weight: 900; text-transform: uppercase; color: #fff; margin: 10px 0 20px 0; position: relative;">
+        CONTACT
+        <span style="display:block; height: 4px; background: #7CFC00; width: 100px; margin-top: 10px; border-radius: 2px;"></span>
+      </h2>
+      <p style="color: #ccc; margin-top: 30px; line-height: 1.6; max-width: 90%;">Let’s connect. Whether it's for music, collaboration, or just to say hi — just one message away.</p>
+    </div>
+
+    <div style="flex: 1 1 400px; min-width: 260px; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 20px;">
+      <p style="font-size: 1.1rem; color: #ccc; margin: 0;">
+        Email: <a href="mailto:sunveerx@gmail.com" style="color: #7CFC00; text-decoration: none; font-weight: bold;">sunveerx@gmail.com</a>
+      </p>
+      <div style="display: flex; gap: 20px;">
+        <a href="https://www.instagram.com/sunveerxgill/" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" style="width: 28px; filter: grayscale(100%) brightness(200%);">
+        </a>
+        <a href="https://open.spotify.com/artist/43sIHGwXC2T5AgNP1ig4mZ?si=9Dvlh7zITA2QIw0QlMGPPA" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174872.png" alt="Spotify" style="width: 28px; filter: grayscale(100%) brightness(200%);">
+        </a>
+        <a href="https://music.apple.com/us/artist/sunveer-gill/1770912717" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/1384/1384061.png" alt="Apple Music" style="width: 28px; filter: grayscale(100%) brightness(200%);">
+        </a>
+        <a href="https://www.youtube.com/@sunveerxgill" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" style="width: 28px; filter: grayscale(100%) brightness(200%);">
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+<footer style="text-align: center; padding: 40px 20px; background: #000;">
+
+  <div style="margin-bottom: 20px; display: flex; justify-content: center; gap: 20px;">
+    <a href="https://www.instagram.com/sunveerxgill/" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" style="width: 24px; filter: grayscale(100%) brightness(200%);">
+    </a>
+    <a href="https://open.spotify.com/artist/43sIHGwXC2T5AgNP1ig4mZ?si=9Dvlh7zITA2QIw0QlMGPPA" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174872.png" alt="Spotify" style="width: 24px; filter: grayscale(100%) brightness(200%);">
+    </a>
+    <a href="https://music.apple.com/us/artist/sunveer-gill/1770912717" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384061.png" alt="Apple Music" style="width: 24px; filter: grayscale(100%) brightness(200%);">
+    </a>
+    <a href="https://www.youtube.com/@sunveerxgill" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" style="width: 24px; filter: grayscale(100%) brightness(200%);">
+    </a>
+  </div>
+
+   <h1 >sunveer gill</h1>
+
+  <!-- Copyright -->
+  <p style="color: #888; font-size: 0.9rem;">&copy; 2025 Sunveer Gill. All rights reserved.</p>
+</footer>
+
+
+  <script>
+    const toggleButton = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('main-nav');
+    toggleButton.addEventListener('click', () => {
+      navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
+    });
+  </script>
+</body>
 </html>
